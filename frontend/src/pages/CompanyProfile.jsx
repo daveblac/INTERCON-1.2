@@ -10,7 +10,7 @@ import { CustomButton, JobCard, Loading, TextInput } from "../components";
 import { Login } from "../redux/userSlice";
 import { apiRequest, handleFileUpload } from "../utils";
 
-const CompnayForm = ({ open, setOpen }) => {
+const CompanyForm = ({ open, setOpen }) => {
   const { user } = useSelector((state) => state.user);
   const {
     register,
@@ -297,7 +297,7 @@ const CompanyProfile = () => {
         </div>
       </div>
 
-      <CompnayForm open={openForm} setOpen={setOpenForm} />
+      <CompanyForm open={openForm} setOpen={setOpenForm} />
     </div>
   );
 };
